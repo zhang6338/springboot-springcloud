@@ -14,14 +14,9 @@ import java.util.List;
 public class HelloController {
     @Autowired
     HelloService helloService;
-
-
-
-
     @RequestMapping("/find")
     @ResponseBody
     public List<User> hello(){
-        System.out.println("111");
         return helloService.findAll();
 
     }
