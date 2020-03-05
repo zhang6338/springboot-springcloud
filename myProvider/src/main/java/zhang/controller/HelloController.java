@@ -21,6 +21,8 @@ public class HelloController {
     @RequestMapping("/find")
     @ResponseBody
     public List<User> hello(){
+        System.out.println("111");
         return helloService.findAll();
+
     }
 }
